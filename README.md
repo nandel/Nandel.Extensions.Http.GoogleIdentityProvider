@@ -7,7 +7,7 @@ Google Docs: https://cloud.google.com/run/docs/authenticating/service-to-service
 ## Install
 
 ```
-dotnet add package Nandel.Extensions.Caching
+dotnet add package Nandel.Extensions.Http.GoogleIdentityProvider
 ```
 
 ##  (Required) Adding options
