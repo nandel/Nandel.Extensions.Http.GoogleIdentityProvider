@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E5C5826F-4662-44AD-87A5-288BBD22D15A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nandel.Extensions.Http.GoogleIdentityProvider", "src\Nandel.Extensions.Http.GoogleIdentityProvider\Nandel.Extensions.Http.GoogleIdentityProvider.csproj", "{0E36BECE-8F68-4F2D-A891-0626A854C8ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E36BECE-8F68-4F2D-A891-0626A854C8ED} = {E5C5826F-4662-44AD-87A5-288BBD22D15A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E36BECE-8F68-4F2D-A891-0626A854C8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E36BECE-8F68-4F2D-A891-0626A854C8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E36BECE-8F68-4F2D-A891-0626A854C8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E36BECE-8F68-4F2D-A891-0626A854C8ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
