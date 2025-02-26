@@ -33,11 +33,11 @@ public class GoogleIdentityManagerFromCloudServices : IGoogleIdentityManager
             await _semaphore.WaitAsync(cancel);
             if (_token != null && _token.ValidTo > DateTime.UtcNow)
             {
-                return _token.RawPayload;
+                return _token.RawData;
             }
             
             _token = await FetchIdentityTokenAsync(cancel);
-            return _token.RawPayload;
+            return _token.RawData;
         }
         finally
         {
