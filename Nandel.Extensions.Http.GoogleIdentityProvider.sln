@@ -4,6 +4,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E5C5826F-466
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nandel.Extensions.Http.GoogleIdentityProvider", "src\Nandel.Extensions.Http.GoogleIdentityProvider\Nandel.Extensions.Http.GoogleIdentityProvider.csproj", "{0E36BECE-8F68-4F2D-A891-0626A854C8ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BC9C1D14-B22D-46F2-9DAA-B45006C8647D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

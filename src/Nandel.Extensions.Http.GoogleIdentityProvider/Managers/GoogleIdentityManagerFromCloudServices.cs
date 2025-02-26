@@ -15,7 +15,7 @@ public class GoogleIdentityManagerFromCloudServices : IGoogleIdentityManager
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly string _audience;
     private readonly ILogger<GoogleIdentityManagerFromCloudServices> _logger;
-    private readonly SemaphoreSlim _semaphore = new(initialCount: 0, maxCount:1);
+    private readonly SemaphoreSlim _semaphore = new(initialCount: 1, maxCount:1);
 
     public GoogleIdentityManagerFromCloudServices(IHttpClientFactory httpClientFactory, string audience, ILogger<GoogleIdentityManagerFromCloudServices> logger)
     {
