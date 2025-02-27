@@ -28,14 +28,24 @@ public class GoogleIdentityManagerFromCloudServices : IGoogleIdentityManager
     
     public async Task<string> GetIdentityAsync(CancellationToken cancel = default)
     {
+        // If we do have a valid token in memory, we just return it
+        if (_token != null && _token.ValidTo > DateTime.UtcNow)
+        {
+            return _token.RawData;
+        }
+        
         try
         {
+            // To avoid concurrent generation of token, we will use a semaphore so only one concurrent request is allowed
             await _semaphore.WaitAsync(cancel);
+            
+            // We need to check again if we do have the token
             if (_token != null && _token.ValidTo > DateTime.UtcNow)
             {
                 return _token.RawData;
             }
             
+            // Generate the token and return
             _token = await FetchIdentityTokenAsync(cancel);
             return _token.RawData;
         }
